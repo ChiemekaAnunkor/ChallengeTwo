@@ -20,4 +20,4 @@ Let’s take a look at what a user story written from the perspective of a hirin
 
 ## Mock-UP
 
-image.png
+<img width="947" alt="image" src="https://user-images.githubusercontent.com/63639477/192317802-aef48a02-d2ae-47b5-861c-edf529ad12f9.png">
