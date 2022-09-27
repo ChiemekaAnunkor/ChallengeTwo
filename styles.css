@@ -1,3 +1,4 @@
+/* general color schedule that can be reused */
 * {
   --lightBlue: #92cbce;
   --gray: #31343d;
@@ -11,18 +12,13 @@ nav {
 }
 
 nav a {
-  /* float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px; */
   border-bottom: 3px solid var(--lightBlue);
   text-decoration: none;
   color: var(--lightBlue);
   margin: 15px;
 }
+
+/* nav bar columns left and right */
 .left {
   float: left;
   margin-left: 40px;
@@ -42,7 +38,6 @@ nav a {
 }
 
 /* source code for transition  effects https://ianlunn.github.io/Hover/ */
-
 .hoverEffect {
   display: inline-block;
   vertical-align: middle;
@@ -77,7 +72,6 @@ nav a {
 .hoverEffect:hover,
 .hoverEffect:focus,
 .hoverEffect:active {
-  /* color: white; */
   border-bottom: 1px;
 }
 .hoverEffect:hover:before,
@@ -89,14 +83,18 @@ nav a {
 
 main {
   background-color: #eeeef7;
+  width: 100%;
 }
+
+/* background section */
 
 .background {
   min-height: 100%;
-  min-width: 1024px;
+  max-width: 100%;
   background-image: url(assets/pexels-fwstudio-139309.jpg);
   height: 200px;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: flex-end;
 }
@@ -106,8 +104,10 @@ main {
   font-size: 20px;
 }
 
+/* creating a column and row section for the main body sections */
 .row {
   display: flex;
+  width: 100%;
 }
 
 .column1 {
@@ -127,6 +127,7 @@ main {
 .column2 {
   flex: 75%;
   margin: 15px;
+  width: 100%;
 }
 
 /* adding image with text  */
@@ -167,10 +168,195 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .contact h3 {
   margin: 20px;
   font-size: 26px;
   padding-top: 60px;
   border-bottom: 3px solid #445876;
+}
+
+@media screen and (max-width: 576px) {
+  nav {
+    background-color: var(--gray);
+    width: 100%;
+    margin-top: -10px;
+    height: 80px;
+  }
+
+  nav a {
+    border-bottom: 3px solid var(--lightBlue);
+    text-decoration: none;
+    color: var(--lightBlue);
+    margin: 0px;
+    font-size: 10px;
+  }
+
+  /* nav bar columns left and right */
+  .left {
+    float: left;
+    /* margin-left: 40px; */
+    margin-top: 10px;
+  }
+
+  .left h2 {
+    padding-left: 40px;
+    margin-left: -40px;
+    font-size: 10px;
+  }
+  .right {
+    float: right;
+    /* margin-right: 50px; */
+    margin-top: 25px;
+  }
+
+  .background {
+    min-height: 100%;
+    background-image: url(assets/pexels-fwstudio-139309.jpg);
+    height: 200px;
+    width: 576px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .background h4 {
+    margin: 20px;
+    background-color: var(--lightBlue);
+    font-size: 20px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .contact h3 {
+    margin: 0px;
+    font-size: 15px;
+    padding-top: 60px;
+    border-bottom: 3px solid #445876;
+  }
+  .column1 h2 {
+    float: right;
+    margin: 40px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: right;
+  }
+
+  .box {
+    position: relative;
+    margin: 10px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+  }
+  .direction {
+    position: absolute;
+    bottom: 10px;
+    left: 19px;
+    font-size: 3px;
+    background-color: #92cbce;
+    padding-left: 30px;
+    margin-left: -19px;
+  }
+}
+
+@media screen and (max-width: 888px) {
+  nav {
+    background-color: var(--gray);
+    width: 100%;
+    margin-top: -10px;
+    height: 80px;
+  }
+
+  nav a {
+    border-bottom: 3px solid var(--lightBlue);
+    text-decoration: none;
+    color: var(--lightBlue);
+    margin: 0px;
+    font-size: 10px;
+  }
+
+  /* nav bar columns left and right */
+  .left {
+    float: left;
+    /* margin-left: 40px; */
+    margin-top: 10px;
+  }
+
+  .left h2 {
+    padding-left: 40px;
+    margin-left: -40px;
+    font-size: 10px;
+  }
+  .right {
+    float: right;
+    /* margin-right: 50px; */
+    margin-top: 25px;
+  }
+
+  .background {
+    min-height: 100%;
+    background-image: url(assets/pexels-fwstudio-139309.jpg);
+    height: 200px;
+    width: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .background h4 {
+    margin: 20px;
+    background-color: var(--lightBlue);
+    font-size: 20px;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .contact h3 {
+    margin: 5px;
+    font-size: 15px;
+    padding-top: 60px;
+    border-bottom: 3px solid #445876;
+  }
+  .column1 h2 {
+    float: right;
+    margin: 40px;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: right;
+  }
+
+  .box {
+    position: relative;
+    margin: 10px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+  }
+  .direction {
+    position: absolute;
+    bottom: 10px;
+    left: 19px;
+    font-size: 10px;
+    background-color: #92cbce;
+    padding-left: 30px;
+    margin-left: -19px;
+    padding-bottom: -10px;
+  }
 }
