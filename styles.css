@@ -1,9 +1,13 @@
 /* general color schedule that can be reused */
-* {
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   --lightBlue: #92cbce;
   --gray: #31343d;
 }
-
 nav {
   background-color: var(--gray);
   width: 100%;
@@ -91,7 +95,7 @@ main {
 .background {
   min-height: 100%;
   max-width: 100%;
-  background-image: url(assets/pexels-fwstudio-139309.jpg);
+  background-image: url(assets/pexels-karen-laårk-boshoff-7434293.jpg);
   height: 200px;
   display: flex;
   flex-wrap: wrap;
@@ -135,21 +139,30 @@ main {
 
 .box {
   position: relative;
-  margin: 20px;
+  margin: 30px;
 }
+
 img {
   width: 100%;
   height: auto;
-  border: 3px solid black;
+  border: 5px solid #92cbce;
 }
 .direction {
   position: absolute;
-  bottom: 10px;
+  bottom: 30px;
   left: 19px;
   font-size: 13px;
   background-color: #92cbce;
   padding-left: 30px;
   margin-left: -19px;
+  padding-right: 10px;
+}
+.direction h3 {
+  margin-bottom: -5px;
+  margin-top: 0px;
+}
+.direction p {
+  margin-top: px;
 }
 
 .imgrow {
@@ -177,6 +190,12 @@ img {
   padding-top: 60px;
   border-bottom: 3px solid #445876;
 }
+
+/* mobile responsive */
+
+/* mobile responsive */
+
+/* mobile responsive */
 
 @media screen and (max-width: 576px) {
   nav {
@@ -214,7 +233,7 @@ img {
 
   .background {
     min-height: 100%;
-    background-image: url(assets/pexels-fwstudio-139309.jpg);
+    background-image: url(assets/pexels-karen-laårk-boshoff-7434293.jpg);
     height: 200px;
     width: 576px;
 
@@ -256,7 +275,7 @@ img {
   img {
     width: 100%;
     height: auto;
-    border: 2px solid black;
+    border: 2px solid #92cbce;
   }
   .direction {
     position: absolute;
@@ -305,10 +324,9 @@ img {
 
   .background {
     min-height: 100%;
-    background-image: url(assets/pexels-fwstudio-139309.jpg);
+    background-image: url(assets/pexels-karen-laårk-boshoff-7434293.jpg);
     height: 200px;
     width: 100%;
-
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
