@@ -5,7 +5,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  --lightBlue: #92cbce;
+  --lightBlue: #02728a;
   --gray: #31343d;
 }
 nav {
@@ -34,6 +34,7 @@ nav a {
   padding-left: 40px;
   margin-left: -40px;
   padding-right: 10px;
+  color: white;
 }
 .right {
   float: right;
@@ -95,7 +96,7 @@ main {
 .background {
   min-height: 100%;
   max-width: 100%;
-  background-image: url(assets/pexels-karen-laårk-boshoff-7434293.jpg);
+  background-image: url(assets/pexels-tóth-viktor-5684798.jpg);
   height: 200px;
   display: flex;
   flex-wrap: wrap;
@@ -104,8 +105,10 @@ main {
 }
 .background h4 {
   margin: 20px;
-  background-color: var(--lightBlue);
+  background-color: var(--gray);
   font-size: 20px;
+  color: white;
+  padding: 5px;
 }
 
 /* creating a column and row section for the main body sections */
@@ -118,7 +121,7 @@ main {
   flex: 25%;
   border-right: 4px solid var(--gray);
   margin: 15px;
-  color: #445876;
+  color: var(--lightBlue);
 }
 
 .column1 h2 {
@@ -145,17 +148,18 @@ main {
 img {
   width: 100%;
   height: auto;
-  border: 5px solid #92cbce;
+  border: 5px solid var(--lightBlue);
 }
 .direction {
   position: absolute;
   bottom: 30px;
   left: 19px;
   font-size: 13px;
-  background-color: #92cbce;
+  background-color: var(--lightBlue);
   padding-left: 30px;
   margin-left: -19px;
   padding-right: 10px;
+  color: white;
 }
 .direction h3 {
   margin-bottom: -5px;
@@ -188,7 +192,7 @@ img {
   margin: 20px;
   font-size: 26px;
   padding-top: 60px;
-  border-bottom: 3px solid #445876;
+  border-bottom: 3px solid var(--lightBlue);
 }
 
 /* mobile responsive */
