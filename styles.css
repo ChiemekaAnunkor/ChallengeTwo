@@ -375,8 +375,8 @@ img {
     position: absolute;
     bottom: 10px;
     left: 19px;
-    font-size: 10px;
-    background-color: #92cbce;
+    font-size: 7px;
+    background-color: var(--lightBlue);
     padding-left: 30px;
     margin-left: -19px;
     padding-bottom: -10px;
